@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/75087f2eee.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="weatherstyle.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Sansita+Swashed:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="weather">
+      <div class="today">
+        <form id="city-search">
+          <input
+            type="search"
+            autofocus="on"
+            autocomplete="off"
+            id="city-input"
+            class="citySearch"
+            placeholder="Enter city.."
+          />
+          <input class="submitButton" type="submit" />
+          <button id="current-location" class="currentLocation" type="button">
+            Current Location
+          </button>
+        </form>
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="mainText">
+              <h1 id="city-entered">London</h1>
+              <h2 id="todays-date"></h2>
+              <h2>Heavy Rain</h2>
+              <p class="todaysTemp">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <span class="temp" id="temp">17</span>
+                <span class="degrees">
+                  <a href="#" class="cel" id="degrees-c">°C </a> |
+                  <a href="#" class="fah" id="degrees-f">°F</a>
+                </span>
+              </p>
+            </div>
+            <p class="todaysInfo">
+              Highs of 13° <br />
+              Lows of 4° <br />
+              Precipitation 70% <br />
+              Humidity 72% <br />
+              Wind 9mph
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="nextWeek">
+        <div class="container">
+          <div class="row row-cols-5">
+            <div class="col">
+              Mon <br />
+              28th Sept
+            </div>
+            <div class="col">
+              Tue <br />
+              29th Sept
+            </div>
+            <div class="col">
+              Wed <br />
+              30th Sept
+            </div>
+            <div class="col">
+              Thurs <br />
+              1st Oct
+            </div>
+            <div class="col">
+              Fri <br />
+              2nd Oct
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud-showers-heavy"></i> <br />
+              7°
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud"></i> <br />
+              12°
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud-sun-rain"></i> <br />
+              14°
+            </div>
+            <div class="col">
+              <i class="fas fa-cloud-sun"></i> <br />
+              14°
+            </div>
+            <div class="col">
+              <i class="fas fa-bolt"></i> <br />
+              10°
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

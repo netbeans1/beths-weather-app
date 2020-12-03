@@ -1,0 +1,94 @@
+h1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+}
+
+.today {
+  border: 8px solid #424a5d;
+  border-radius: 10px;
+  padding: 10px;
+  background-image: url("raindrops.png");
+  background-size: 600px;
+}
+
+.mainText {
+  padding: 0px 0px 0px 10px;
+}
+
+.degrees {
+  font-size: 20px;
+}
+.weather {
+  max-width: 600px;
+  margin: 2em auto;
+}
+.nextWeek {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  border-bottom: 8px solid #424a5d;
+  border-right: 8px solid #424a5d;
+  border-left: 8px solid #424a5d;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+}
+.citySearch {
+  margin: 0px 5px 15px 0px;
+  padding: 6px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.currentLocation {
+  background: #7394e2;
+  font-family: "Lato", sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  transition: ease-in-out 250ms;
+  padding: 6px;
+  border-color: #7394e2;
+  display: inline-block;
+  margin: 0px 5px;
+}
+
+.currentLocation:hover {
+  background: white;
+  color: #424a5d;
+}
+.fas {
+  font-size: 40px;
+  color: rgb(89, 89, 89);
+}
+.todaysTemp {
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+}
+
+.todaysInfo {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  padding-left: 120px;
+  padding-top: 80px;
+}
+
+.submitButton {
+  background: #424a5d;
+  font-family: "Lato", sans-serif;
+  border-radius: 10px;
+  padding: 5px;
+  color: white;
+  transition: ease-in-out 250ms;
+  padding: 6px;
+  border-color: #424a5d;
+  display: inline-block;
+}
+
+.submitButton:hover {
+  background: white;
+  color: #424a5d;
+}

@@ -38,7 +38,7 @@ function formatDate() {
   let month = months[now.getMonth()];
   let date = now.getDate();
 
-  let todaysDate = `${day}, ${month} ${date}, ${hours}:${minutes}`;
+  let todaysDate = `${day}, <br> ${month} ${date}, ${hours}:${minutes}`;
   return todaysDate;
 }
 let h2 = document.querySelector("h2");

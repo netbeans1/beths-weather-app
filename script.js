@@ -50,6 +50,8 @@ function showTemp(response) {
   todaysTemp.innerHTML = temperature;
   let cityEntered = document.querySelector("#city-entered");
   cityEntered.innerHTML = response.data.name;
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].description;
 
   function toCelsius(event) {
     event.preventDefault();
@@ -99,3 +101,5 @@ function getTemp() {
 
 let locationSearch = document.querySelector("#current-location");
 locationSearch.addEventListener("click", getTemp);
+
+searchResult("London");

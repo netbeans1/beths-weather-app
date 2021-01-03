@@ -17,6 +17,7 @@ h2 {
 
 .mainText {
   padding: 0px 0px 0px 10px;
+  text-transform: capitalize;
 }
 
 .degrees {

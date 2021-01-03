@@ -52,6 +52,11 @@ function showTemp(response) {
   cityEntered.innerHTML = response.data.name;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
 
   function toCelsius(event) {
     event.preventDefault();

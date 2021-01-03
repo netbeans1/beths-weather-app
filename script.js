@@ -40,9 +40,24 @@ function formatDate() {
 
   let todaysDate = `${day}, <br> ${month} ${date}, ${hours}:${minutes}`;
   return todaysDate;
+  return `${day} ${formatHours(timestamp)}`;
 }
 let h2 = document.querySelector("h2");
 h2.innerHTML = formatDate(new Date());
+
+function formatHours(timestamp) {
+  let date = new Date(timestamp);
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
 
 function showTemp(response) {
   let todaysTemp = document.querySelector("#temp");
